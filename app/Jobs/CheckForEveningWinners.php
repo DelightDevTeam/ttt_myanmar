@@ -92,7 +92,7 @@ class CheckForEveningWinners implements ShouldQueue
                     $lottery = Lottery::findOrFail($entry->lottery_id);
                     $user = $lottery->user;
 
-                    $prize = $entry->sub_amount * 95;
+                    $prize = $entry->sub_amount * 90;
                     $user->balance += $prize;
                     $user->save();
 

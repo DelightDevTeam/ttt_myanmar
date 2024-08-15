@@ -60,7 +60,7 @@ class AdminEveningPrizeSentService
             // Calculate total prize amount
             $totalPrizeAmount = 0;
             foreach ($results as $result) {
-                $prizeAmount = $result->sub_amount * 95; // Prize multiplier
+                $prizeAmount = $result->sub_amount * 90; // Prize multiplier
                 $totalPrizeAmount += $prizeAmount;
             }
 

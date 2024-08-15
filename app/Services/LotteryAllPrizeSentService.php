@@ -34,7 +34,7 @@ class LotteryAllPrizeSentService
                 $morning_prizeAmount = $result->sub_amount * 85; // Prize multiplier
                 $morning_totalPrizeAmount += $morning_prizeAmount; // Accumulate the total prize amount
             } elseif ($result->session == 'evening') {
-                $evening_prizeAmount = $result->sub_amount * 95; // Prize multiplier
+                $evening_prizeAmount = $result->sub_amount * 90; // Prize multiplier
                 $evening_totalPrizeAmount += $evening_prizeAmount; // Accumulate the total prize amount
             }
         }
